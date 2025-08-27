@@ -1,24 +1,285 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 1: Rojo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 1:Rojo</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Construcción de identidad digital responsable.</li>
+                                        <li>Reflexionar sobre cómo nuestras publicaciones forman una imagen sobre quiénes somos en Internet.</li>
+                                        <li>Entender el concepto de identidad digital, la relación entre publicaciones y percepción, y la importancia de pensar antes de publicar.</li>
+                                        <li>Reconocer que cada publicación, comentario o imagen contribuye a crear nuestra identidad digital.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Análisis en equipo de perfiles digitales en el cuaderno.</li>
+                                        <li>"Tweet de Aprendizaje" individual resumiendo la regla de oro personal.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Cuadernos y material de escritura.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar ideas previas sobre la auto-representación de forma rápida y visual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyectar Diapositiva 2. Recuerdo Relámpago: EmojiClave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipo, bienvenidos a su primera misión de Ciudadanía Digital de 4to grado! 🚀 Durante varias clases, vamos a explorar cómo ser ciudadanos increíbles en el mundo de internet. Para calentar motores, vamos con un reto de emojis. Piensen en esto: si tuvieran que presentarse al mundo digital usando solo TRES emojis, ¿cuáles serían? No hay respuestas incorrectas. ¡Piensen en lo que los hace únicos!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Breve reflexión guiada por el maestro para conectar la dinámica con el tema de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Veo combinaciones geniales! 🎮🎨⚽️... ¡Un control, una paleta de colores y un balón! Eso ya nos cuenta una historia sobre quiénes son. Esos emojis son como los primeros ladrillos de su identidad digital. Hoy vamos a aprender a ser los arquitectos maestros de esa identidad. ¿Listos para construir?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar de forma individual cómo las publicaciones construyen una imagen online a través de una interacción guiada.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyectar Diapositiva 3. Conexión Ada: Misión Rojo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, arquitectos! Es momento de entrar al taller digital. Conéctense a la plataforma e inicien sesión. La clave de activación para la misión de hoy es: Misión Rojo. Escríbanla cuando Ada se las pida. Ada los guiará en una exploración para entender cómo cada pieza que publicamos construye nuestra imagen. Avancen a su propio ritmo. Si tienen alguna duda técnica, aquí estoy para ayudar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Proyectar Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 10 minutos</h2>
+                <p>Introducir el reto de análisis crítico, estableciendo el rol de "Detectives de Identidad".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express ⏰ 1 minutos</h3>
+                            <p>Proyectar Diapositiva 5. Challenge: La Fila de Sospechosos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Han demostrado ser arquitectos maestros! Ahora, la prueba final. Se convertirán en Detectives de Identidad. Analizarán a tres 'sospechosos' para descifrar la historia que sus perfiles nos cuentan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Proyectar Diapositiva 6. Los Expedientes. El maestro narra la historia de cada perfil.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Atención, detectives! El director de la escuela quiere crear tres nuevos clubes y busca líderes. Aquí están los expedientes de los candidatos, basados en sus perfiles de la red escolar: Candidato 1, 'ProGamer_X': Sus últimas 10 publicaciones son capturas de sus victorias en 'Galaxy Wars'. Candidato 2, 'AnaExploradora': Publica fotos de insectos, preguntas sobre estrellas y links a museos. Candidato 3, 'ChistesDeLeo': Solo publica memes y chistes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 4 minutos</h3>
+                            <p>En sus cuadernos, los equipos analizan cada perfil y responden preguntas para descifrar su identidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡A investigar! Trabajen en equipos y respondan lo siguiente en su cuaderno para cada candidato: <br>1. ¿Para qué club escolar sería el líder perfecto? <br>2. ¿Qué tres palabras describen la 'reputación' que ha construido? <br>3. ¿Su perfil nos cuenta toda la historia sobre ellos o solo una parte? ¿Por qué? <br>¡Descifren el código de cada identidad!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Proyectar Diapositiva 7. El Reporte del Detective.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo! Equipo 'Los Investigadores', ¿para qué club eligieron a 'AnaExploradora'? ¡Club de Ciencias! ¿Por qué? ¡Perfecto! Equipo 'Los Analistas', ¿qué nos dice el perfil de 'ProGamer_X' sobre él? ¿Creen que también le gusta leer? ¿Por qué no lo sabemos? ¡Excelente!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en una regla personal poderosa y fácil de recordar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 3 minutos</h3>
+                            <p>Proyectar Diapositiva 8. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para cerrar, van a crear su propia regla de oro de construcción. En una frase corta, como un tweet, escriban lo más importante que aprendieron hoy. Usen la metáfora del arquitecto y los ladrillos. Luego, compártanla con la persona de al lado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyectar Diapositiva 9. Reflexión final: El Sello del Arquitecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Escucho ideas brillantes! La idea más poderosa que construimos hoy es esta, y será su primera clave secreta. El Sello del Arquitecto Digital es: ✨ Cada post es un ladrillo... y yo construyo mi castillo. 🏰. Nunca olviden que ustedes son los directores de su propia historia digital. ¡Gran trabajo, arquitectos!</p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3:  ¡Tu Recompensa de Arquitecto! ⏰ 3 minutos</h3>
+                            <p>(Proyectar la misma Diapositiva 9 de cierre, "El Sello del Arquitecto")</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Genial! Ese 'Sello del Arquitecto' es muy poderoso. Y hablando de poder, quiero contarles cómo en Gnius Club premiamos su esfuerzo, especialmente en estas misiones tan importantes. Les presento el sistema Mon-e."
+
+"Piensen en Mon-e como las monedas que ganan en un videojuego por pasar un nivel. Por completar esta misión de Ciudadanía Digital de hoy, ¡cada uno de ustedes ha ganado 10 Mon-e para su cuenta! ¡Felicidades! En sus clases de tecnología, con sus proyectos, también ganarán Mon-e."
+
+"¿Y qué pueden hacer con estas monedas? ¡Aquí viene lo más emocionante! Podrán usar su Mon-e para comprar horas de impresión 3D. ¿Se imaginan? El personaje que diseñen, un llavero para su mochila, una herramienta útil... ¡podrán traer sus ideas del mundo digital al mundo real!"
+
+"Pero hay una regla de oro muy importante, que conecta todo lo que hacemos. Para poder usar ese súper poder de imprimir en 3D, primero deben demostrar que son arquitectos digitales responsables. Por eso, no podrán canjear su Mon-e hasta que hayan completado todas las misiones de Ciudadanía Digital de este año. Cada misión como la de hoy es un paso más para desbloquear esa increíble recompensa. Así que, pongan mucha atención en cada clase, porque están construyendo su castillo y llenando su cofre del tesoro al mismo tiempo. ¡Nos vemos en la próxima misión!"
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
